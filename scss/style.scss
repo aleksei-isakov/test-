@@ -1,0 +1,92 @@
+@use 'sass:math';
+
+/**
+* Подключение шрифтов локально из папки "./src/fonts"
+*/
+@import 'config/fonts';
+
+/** Подключение переменных */
+@import 'config/vars';
+
+/**
+* Подключение sass function и mixins и extends стилей
+*/
+@import 'config/functions';
+@import 'config/mixins';
+@import 'config/patternSelectors';
+
+/** Обнуление */
+@import 'config/reset';
+
+/**
+* Библиотеки
+* раскомментировать для использования
+*/
+// @import 'libs/aos';
+// @import 'libs/swiper';
+
+/**
+* Подключение custom scrollbar для всего сайта
+*/
+//@import 'config/scrollbar';
+
+/**
+* Общие параметры, шаблоны(заготовки) и вспомогательные классы
+*/
+@import 'config/normalize';
+
+/**
+* БЕМ блоки используемые во всё проекте
+*/
+@import 'config/common';
+
+/**
+* Стили choise js для селектов
+*/
+@import 'config/choise';
+
+/**
+* Подключение стилей отдельных блоков и секций
+*/
+@import 'components/header';
+@import 'components/popup';
+@import 'components/textarea';
+@import 'components/tabs';
+@import 'components/accordion';
+@import 'components/footer';
+@import 'components/select';
+@import 'components/about';
+@import 'components/header-main-page';
+@import 'components/footer';
+@import 'components/lead';
+@import 'components/btn';
+@import 'components/news-item';
+@import 'components/development-program';
+// @import 'components/dropdown';
+@import 'components/years';
+@import 'components/news';
+@import 'components/pagination';
+@import 'components/library';
+@import 'components/project-team';
+@import 'components/modalTooltip';
+@import 'components/login';
+@import 'components/about-teachers-role';
+@import 'components/about-mentors';
+@import 'components/burger-menu';
+@import 'components/header-login';
+@import 'components/newSelect';
+@import 'components/news-select';
+@import 'components/flagman-school';
+@import 'components/header-registration';
+@import 'components/library-select';
+@import 'components/rating-btn';
+@import 'components/registration';
+@import 'components/recover-pswd';
+@import 'components/course-list';
+@import 'components/course';
+@import 'components/courses';
+@import 'components/requests';
+@import 'components/request-card';
+
+//adaptive
+@import 'components/about-adaptive';

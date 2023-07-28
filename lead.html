@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+'title': 'Главная'
+})
+<body class='no-wings'>
+
+    @@include('html/header-main-page.html')
+
+    <div id="video-anchor" class="banner">
+        <div id="banner-play-video" class="banner__content">
+            <img class="banner__gif" src="images/orlyata-gif.gif" loading="lazy" alt="">
+            <img class="banner__play" src="images/play-video.svg" loading="lazy" alt="">
+        </div>
+        <div id="modal-container">
+            <div id="video-container">
+                <video id="video" controls autoplay>
+                    <source src="#" type="video/mp4">
+                    Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+            </div>
+        </div>
+    </div>
+    <div id="static-anchor" class="static-block-wrapper">
+        <div class="static-block__mask">
+            <img src="images/static-mask.svg" loading="lazy" alt="">
+        </div>
+        <div class="static-content-wrapper">
+            <div class="static-block">
+                <div class="static-block__item">
+                    <p class="static-block__number">100</p>
+                    <p class="static-block__title">событий</p>
+                    <p class="static-block__description">Вас ждёт яркая и насыщенная жизнь</p>
+                    <a href="#" class="static-block__button">Окунись в атмосферу</a>
+                </div>
+                <div class="static-block__item">
+                    <p class="static-block__number">4000</p>
+                    <p class="static-block__title">орлят</p>
+                    <p class="static-block__description">Самый массовый проект, который объединяет миллионы детей,
+                        учителей и родителей.</p>
+                    <a href="#" class="static-block__button">Посмотри сколько нас</a>
+                </div>
+                <div class="static-block__item">
+                    <p class="static-block__number">300</p>
+                    <p class="static-block__title">учителей</p>
+                    <p class="static-block__description">Уникальное сообщество единомышленников, влюблённых в профессию
+                        учителя.</p>
+                    <a href="#" class="static-block__button">О чём говорят учителя</a>
+                </div>
+                <div class="static-block__item">
+                    <p class="static-block__number">0</p>
+                    <p class="static-block__title">условий</p>
+                    <p class="static-block__description">Ваше желание – и вы в проекте!</p>
+                    <a href="#" class="static-block__button">Пройдите регистрацию</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class='page'>
+        <div class="container">
+            <div id="title-anchor" class="title">
+                <div class="title__logo">
+                    <img src="images/orlyata-logo.svg" loading="lazy" alt="orlyata-logo">
+                </div>
+                <div class='title-anchor__red-wing-icon'>
+                    <img src='images/red-wing-title-icon.svg' alt='red-wing-icon'>
+                </div>
+                <div class="title__slogan">
+                    <span class="slogan-purple">Учимся,</span> <span class="slogan-blue">растём,</span><span
+                        class="slogan-red"> мечтаем вместе!</span>
+                </div>
+            </div>
+            <div class="filter-user">
+                <div class="filter-user__item">
+                    <div class="filter-user__img">
+                        <div class="blur-load" style='background-image: url(images/ychetelyam-mini.png)'>
+                            <img src="images/ychetelyam.png" loading="lazy" alt="ychetelyam">
+                        </div>
+                    </div>
+                    <div class="filter-user__button-wrapper">
+                        <a href="#" class="filter-user__button back-purple">
+                            <div class="filter-user__title">Учителям</div>
+                            <div class="filter-user__mask"><img src="images/users-button-mask.svg" alt="users-button-mask"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="filter-user__item">
+                    <div class="filter-user__img">
+                        <div class="blur-load" style='background-image: url(images/roditelyam-mini.png)'>
+                        <img src="images/roditelyam.png" loading="lazy" alt="roditelyam">
+                        </div>
+                    </div>
+                    <div class="filter-user__button-wrapper">
+                        <a href="#" class="filter-user__button back-blue">
+                            <div class="filter-user__title">Родителям</div>
+                            <div class="filter-user__mask"><img src="images/users-button-mask.svg" alt="users-button-mask"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="filter-user__item">
+                    <div class="filter-user__img">
+                        <div class="blur-load" style='background-image: url(images/nastavnikam-mini.png)'>
+                        <img src="images/nastavnikam.png" loading="lazy" alt="nastavnikam">
+                        </div>
+                    </div>
+                    <div class="filter-user__button-wrapper">
+                        <a href="#" class="filter-user__button back-red">
+                            <div class="filter-user__title">Наставникам</div>
+                            <div class="filter-user__mask"><img src="images/users-button-mask.svg" loading="lazy" alt="users-button-mask"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="news-anchor" class="news-block">
+                <h1>
+                    Новости проекта
+                </h1>
+                <ul class="news-block-content">
+                    <li class="card-news">
+                        <div class="card-news__img">
+                            <div class="blur-load" style='background-image: url(images/news1-mini.jpg)'>
+                            <img src="images/news1.jpg" loading="lazy" alt="news1">
+                            </div>
+                        </div>
+                        <div class="card-news__content">
+                            <a href="#" class="card-news__title">Международный день защиты детей</a>
+                            <div class="card-news__description">1 июня во всем мире ежегодно отмечается
+                                Международный
+                                день
+                                защиты детей.
+                            </div>
+                            <div class="card-news__date">1 июня</div>
+                        </div>
+                    </li>
+                    <li class="card-news">
+                        <div class="card-news__img">
+                            <div class="blur-load" style='background-image: url(images/news2-mini.jpg)'>
+                            <img src="images/news2.jpg" loading="lazy" alt="news2">
+                            </div>
+                        </div>
+                        <div class="card-news__content">
+                            <a href="#" class="card-news__title">Церемония посвящения в Орлята России</a>
+                            <div class="card-news__description">22 и 24 мая в «Орлёнке» состоялась торжественная
+                                церемония посвящения школьников в Орлята России.
+                            </div>
+                            <div class="card-news__date">22 мая</div>
+                        </div>
+                    </li>
+                    <li class="card-news">
+                        <div class="card-news__img">
+                            <div class="blur-load" style='background-image: url(images/news3-mini.jpg)'>
+                                <img src="images/news3.jpg" loading="lazy" alt="news3">
+                            </div>
+                        </div>
+                        <div class="card-news__content">
+                            <a href="#" class="card-news__title">Сегодня орлята, а завтра – орлы!
+                            </a>
+                            <div class="card-news__description">В Орлёнке прошло закрытие смены «Содружество
+                                Орлят России».
+                            </div>
+                            <div class="card-news__date">24 мая</div>
+                        </div>
+                    </li>
+                    <li class="card-news">
+                        <div class="card-news__img">
+                            <div class="blur-load" style='background-image: url(images/news4-mini.jpg)'>
+                            <img src="images/news4.jpg" loading="lazy" alt="news4">
+                            </div>
+                        </div>
+                        <div class="card-news__content">
+                            <a href="#" class="card-news__title">Церемония открытия смены «Содружество Орлят
+                                России»</a>
+                            <div class="card-news__description">13 мая в амфитеатре ВДЦ «Орлёнок» состоялась
+                                торжественная церемония открытия тематической смены «Содружество Орлят России».
+                            </div>
+                            <div class="card-news__date">13 мая</div>
+                        </div>
+                    </li>
+                    <li class="card-news">
+                        <div class="card-news__img">
+                            <div class="blur-load" style='background-image: url(images/news5-mini.jpg)'>
+                            <img src="images/news5.jpg" loading="lazy" alt="news5">
+                            </div>
+                        </div>
+                        <div class="card-news__content">
+                            <a href="#" class="card-news__title">Международный день защиты детей</a>
+                            <div class="card-news__description">1 июня во всем мире ежегодно отмечается
+                                Международный
+                                день
+                                защиты детей.
+                            </div>
+                            <div class="card-news__date">1 июня</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="buttons">
+                    <button class="button" id="subscribeBtn">
+                        <div class="button__text">Подписаться</div>
+                        <div class="button__mask"><img src="images/button-mask.svg" loading="lazy" alt="button-mask"></div>
+                    </button>
+                    <button class="button">
+                        <div class="button__text">Смотреть все новости</div>
+                        <div class="button__mask"><img src="images/button-mask.svg" loading="lazy" alt="button-mask"></div>
+                    </button>
+                    <div class="subscribe-modal" id="subscribeModal">
+                        <div class="subscribe-modal__wrapper">
+                            <img src="images/close-btn.svg" class="subscribe-modal__close" id="closeModalBtn">
+                            <div class="subscribe-modal__title">Подписаться на рассылку</div>
+                            <div class="subscribe-modal__content">
+                                <div class="subscribe-modal__input input">
+                                    <span class="input__label">Введите ваш email</span>
+                                    <input type="email" id="email" class="input__field">
+                                    <div id="emailError" class="input__valid-error"></div>
+                                </div>
+                                <button class="subscribe-modal__button button" id="subscribeSubmitBtn">
+                                    <div class="button__text">Подписаться</div>
+                                    <div class="button__mask"><img src="images/button-mask.svg" loading="lazy" alt="button-mask"></div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ambassador-anchor" class="endorsements-block">
+                <h1>Амбассадоры проекта «Орлята России»</h1>
+                <div class="about-slider">
+                    <div class="swiper swiper-about about__swiper">
+                        <div class="swiper-wrapper about-wrapper">
+                            <div class="swiper-slide">
+                                <div class="about-slide">
+                                    <div class="about__content">
+                                        <button class="about__photo" data-modal-button="modal-1">
+                                            <img src="images/ambassador1.webp" loading="lazy" alt="Фотография амбассадора"
+                                                 class="about__img">
+                                        </button>
+                                        <div class="about__person-info">
+                                            <p class="about__name">Большоеимя</p>
+                                            <p class="about__surname">Большаяфамилия</p>
+                                            <p class="about__position">Должность</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-slide">
+                                    <div class="about__content">
+                                        <button class="about__photo" data-modal-button="modal-2">
+                                            <img src="images/ambassador2.webp" loading="lazy" alt="Фотография амбассадора"
+                                                 class="about__img">
+                                        </button>
+                                        <div class="about__person-info">
+                                            <p class="about__name">Большоеимя</p>
+                                            <p class="about__surname">Большаяфамилия</p>
+                                            <p class="about__position">Должность Две строки Две строки</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-slide">
+                                    <div class="about__content">
+                                        <button class="about__photo" data-modal-button="modal-3">
+                                            <img src="images/ambassador3.webp" loading="lazy" alt="Фотография амбассадора"
+                                                 class="about__img">
+                                        </button>
+                                        <div class="about__person-info">
+                                            <p class="about__name">Большоеимя</p>
+                                            <p class="about__surname">Большаяфамилия</p>
+                                            <p class="about__position">Должность</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-slide">
+                                    <div class="about__content">
+                                        <button class="about__photo" data-modal-button="modal-4">
+                                            <img src="images/ambassador4.webp" loading="lazy" alt="Фотография амбассадора"
+                                                 class="about__img">
+                                        </button>
+                                        <div class="about__person-info">
+                                            <p class="about__name">Большоеимя</p>
+                                            <p class="about__surname">Большаяфамилия</p>
+                                            <p class="about__position">Должность</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-slide">
+                                    <div class="about__content">
+                                        <button class="about__photo" data-modal-button="modal-5">
+                                            <img src="images/ambassador5.webp" loading="lazy" alt="Фотография амбассадора"
+                                                 class="about__img">
+                                        </button>
+                                        <div class="about__person-info">
+                                            <p class="about__name">Большоеимя</p>
+                                            <p class="about__surname">Большаяфамилия</p>
+                                            <p class="about__position">Должность</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-slide">
+                                    <div class="about__content">
+                                        <button class="about__photo" data-modal-button="modal-6">
+                                            <img src="images/ambassador6.webp" loading="lazy" alt="Фотография амбассадора"
+                                                 class="about__img">
+                                        </button>
+                                        <div class="about__person-info">
+                                            <p class="about__name">Большоеимя</p>
+                                            <p class="about__surname">Большаяфамилия</p>
+                                            <p class="about__position">Должность Две строки Две строки</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-slide">
+                                    <div class="about__content">
+                                        <button class="about__photo" data-modal-button="modal-7">
+                                            <img src="images/ambassador6.webp" loading="lazy" alt="Фотография амбассадора"
+                                                 class="about__img">
+                                        </button>
+                                        <div class="about__person-info">
+                                            <p class="about__name">Большоеимя</p>
+                                            <p class="about__surname">Большаяфамилия</p>
+                                            <p class="about__position">Должность Две строки Две строки</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-slide">
+                                    <div class="about__content">
+                                        <button class="about__photo" data-modal-button="modal-8">
+                                            <img src="images/ambassador6.webp" loading="lazy" alt="Фотография амбассадора"
+                                                 class="about__img">
+                                        </button>
+                                        <div class="about__person-info">
+                                            <p class="about__name">Большоеимя</p>
+                                            <p class="about__surname">Большаяфамилия</p>
+                                            <p class="about__position">Должность Две строки Две строки</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-slide">
+                                    <div class="about__content">
+                                        <button class="about__photo" data-modal-button="modal-8">
+                                            <img src="images/ambassador1.webp" loading="lazy" alt="Фотография амбассадора"
+                                                 class="about__img">
+                                        </button>
+                                        <div class="about__person-info">
+                                            <p class="about__name">Большоеимя</p>
+                                            <p class="about__surname">Большаяфамилия</p>
+                                            <p class="about__position">Должность</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__btns">
+                            <button class="slider-btn about-btn about__prev">
+                                <img src="images/prev-arrow.svg" loading="lazy" alt="Кнопка предыдущего слайда">
+                            </button>
+                            <button class="slider-btn about-btn about__next">
+                                <img src="images/next-arrow.svg" loading="lazy" alt="Кнопка следующего слайда">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal lead-modal">
+                    <div class="modal-slider modal__hidden-content">
+                        <div class="swiper swiper-modal modal__swiper">
+                            <div class="swiper-wrapper modal-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="modal-slide ">
+                                        <div class="modal__content" data-close="true">
+                                            <div class="modal__photo" data-close="true">
+                                                <img src="images/ambassador1.webp" loading="lazy" alt="Фотография амбассадора"
+                                                     class="modal__img">
+                                            </div>
+                                            <div class="modal__info">
+                                                <blockquote class="modal__text" data-close="true">
+                                                    &laquo;Следует добавить, что и&nbsp;другие генетические типы
+                                                    четвертичных
+                                                    отложений
+                                                    метаморфическая фация восстановлена. Количество пирокластического
+                                                    материала
+                                                    стягивает корунд.
+                                                    Океаническое ложе, с&nbsp;зачастую загипсованными породами,
+                                                    пододвигается
+                                                    под абиссальный
+                                                    голоцен.
+                                                    Сейчас хорошо известно, что краевая часть артезианского бассейна
+                                                    значительно
+                                                    сбрасывает
+                                                    осадочный
+                                                    ийолит-уртит, но&nbsp;приводит к&nbsp;загрязнению окружающей среды&raquo;.
+                                                </blockquote>
+                                                <div class="modal__person">
+                                                    <p class="modal__name">Константин Константинопольский</p>
+                                                    <p class="modal__position" data-close="true">ИО генерального
+                                                        директора
+                                                        МОУ ДЮСШ 1548</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="modal-slide">
+                                        <div class="modal__content" data-close="true">
+                                            <div class="modal__photo" data-close="true">
+                                                <img src="images/ambassador2.webp" loading="lazy" alt="Фотография амбассадора"
+                                                     class="modal__img">
+                                            </div>
+                                            <div class="modal__info">
+                                                <blockquote class="modal__text" data-close="true">
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste vero
+                                                    officia
+                                                    itaque, assumenda quis
+                                                    sed inventore excepturi beatae laboriosam quod ut voluptatibus eos
+                                                    quisquam
+                                                    quam!
+                                                </blockquote>
+                                                <div class="modal__person">
+                                                    <p class="modal__name">Константин Константинопольский</p>
+                                                    <p class="modal__position" data-close="true">ИО генерального
+                                                        директора
+                                                        МОУ ДЮСШ 1548</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="modal-slide">
+                                        <div class="modal__content" data-close="true">
+                                            <div class="modal__photo" data-close="true">
+                                                <img src="images/ambassador3.webp" loading="lazy" alt="Фотография амбассадора"
+                                                     class="modal__img">
+                                            </div>
+                                            <div class="modal__info">
+                                                <blockquote class="modal__text" data-close="true">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                                                    voluptate
+                                                    eveniet ipsa possimus!
+                                                    Magni molestiae esse, nesciunt nostrum vel praesentium accusamus
+                                                    error
+                                                    alias, laborum veniam odio
+                                                    totam earum iste blanditiis voluptate, deserunt nulla nobis soluta
+                                                    commodi
+                                                    dolorum. Hic
+                                                    consequuntur accusamus architecto aperiam minus nostrum reiciendis
+                                                    nulla
+                                                    labore placeat in veniam
+                                                    dolore illo vero enim nam, illum laboriosam laudantium eum, neque
+                                                    sed,
+                                                    sequi
+                                                    sint et commodi
+                                                </blockquote>
+                                                <div class="modal__person">
+                                                    <p class="modal__name">Константин Константинопольский</p>
+                                                    <p class="modal__position" data-close="true">ИО генерального
+                                                        директора
+                                                        МОУ ДЮСШ 1548</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="modal-slide">
+                                        <div class="modal__content" data-close="true">
+                                            <div class="modal__photo" data-close="true">
+                                                <img src="images/ambassador4.webp" loading="lazy" alt="Фотография амбассадора"
+                                                     class="modal__img">
+                                            </div>
+                                            <div class="modal__info">
+                                                <blockquote class="modal__text" data-close="true">
+                                                    Lorem ipsum dolor sit.
+                                                </blockquote>
+                                                <div class="modal__person">
+                                                    <p class="modal__name">Константин Константинопольский</p>
+                                                    <p class="modal__position" data-close="true">ИО генерального
+                                                        директора
+                                                        МОУ ДЮСШ 1548</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="modal-slide">
+                                        <div class="modal__content" data-close="true">
+                                            <div class="modal__photo" data-close="true">
+                                                <img src="images/ambassador5.webp" loading="lazy" alt="Фотография амбассадора"
+                                                     class="modal__img">
+                                            </div>
+                                            <div class="modal__info">
+                                                <blockquote class="modal__text" data-close="true">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                                    enim
+                                                    veniam
+                                                    eius nobis, iusto,
+                                                    non aliquam neque quo distinctio exercitationem illum? Earum fugiat
+                                                    amet,
+                                                    culpa nobis placeat
+                                                    natus libero commodi nisi sunt deserunt, delectus doloribus,
+                                                    inventore
+                                                    maiores quis dignissimos
+                                                    alias ad atque! Earum culpa optio quasi, vitae eligendi ratione
+                                                    iure?
+                                                </blockquote>
+                                                <div class="modal__person">
+                                                    <p class="modal__name">Константин Константинопольский</p>
+                                                    <p class="modal__position" data-close="true">ИО генерального
+                                                        директора
+                                                        МОУ ДЮСШ 1548</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="modal-slide">
+                                        <div class="modal__content" data-close="true">
+                                            <div class="modal__photo" data-close="true">
+                                                <img src="images/ambassador6.webp" loading="lazy" alt="Фотография амбассадора"
+                                                     class="modal__img">
+                                            </div>
+                                            <div class="modal__info">
+                                                <blockquote class="modal__text" data-close="true">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Perspiciatis
+                                                    animi
+                                                    maxime numquam
+                                                    placeat odit. Sunt earum cumque eos nulla dolor.
+                                                </blockquote>
+                                                <div class="modal__person">
+                                                    <p class="modal__name">Константин Константинопольский</p>
+                                                    <p class="modal__position" data-close="true">ИО генерального
+                                                        директора
+                                                        МОУ ДЮСШ 1548</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal__close-btn">
+                                <button>
+                                    <img src="images/close-btn.svg" alt="Кнопка закрытия">
+                                </button>
+                            </div>
+                            <div class="modal__btns">
+                                <button class="slider-btn modal-btn modal__prev" data-close="true">
+                                    <img src="images/prev-arrow.svg" alt="Кнопка предыдущего слайда" data-close="true">
+                                </button>
+                                <button class="slider-btn modal-btn modal__next" data-close="true">
+                                    <img src="images/next-arrow.svg" alt="Кнопка следующего слайда" data-close="true">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fixed-block" class="side-panel">
+                <a href="registration.html" class="side-button back-red">
+                    <div class="side-button__mask">
+                        <img src="images/side-button-mask.svg" alt="">
+                    </div>
+                    <div class="side-button__title">Принять участие</div>
+                </a>
+            </div>
+            <div id="scrollButton" class="back-to-bottom">
+                <img src="images/back-to-bottom.svg" alt="">
+            </div>
+
+            <div id="scrollButtonTop" class="back-to-top" style="display: none;">
+                <img src="images/back-to-bottom.svg" alt="">
+            </div>
+        </div>
+    </main>
+    @@include('html/footer.html')
+</div>
+</body>

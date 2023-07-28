@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html', {
+'title': 'О проекте'
+})
+
+<body>
+		@@include('html/header.html')
+
+		<main class="page">
+			<div class="container">
+				<!-- breadcrumbs -->
+				@@include(
+				'html/components/breadcrumbs/breadcrumbs.html',
+				{'breadcrumbsArray':[
+				{ "title": "Главная", link:"lead.html", active: false,},
+				{ "title": "О проекте", link:"null.html", active: true,}
+				]}
+				)
+				<!-- title -->
+				<h1>О проекте</h1>
+			</div>
+			<!-- content страницы компонент -->
+			@@include('html/about-project/about-content.html')
+		</main>
+
+		@@include('html/footer.html')
+
+
+</body>
+
+</html>

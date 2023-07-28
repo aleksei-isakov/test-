@@ -1,0 +1,247 @@
+.header-main-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: rgba(62, 0, 146, 1);
+  @media (max-width: 1440px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 800px) {
+    padding: 20px;
+  }
+  @media (max-width: 768px) {
+    height: auto;
+  }
+  &__logo-item-container {
+    max-height: 70px;
+  }
+  .logo-picture {
+    max-height: 70px;
+  }
+  .pervie {
+    max-height: 75px;
+  }
+  .outer-header-main-page {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px 25px;
+    }
+  }
+
+  &__content-container {
+    width: 1380px;
+    position: relative;
+  }
+
+  &__logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 365px;
+    @media (max-width: 768px) {
+      width: auto;
+    }
+  }
+
+  &__logo-container {
+    cursor: pointer;
+  }
+
+  &__info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 294px;
+    @media (max-width: 768px) {
+      gap: 25px;
+      align-self: flex-end;
+      width: 200px;
+    }
+  }
+
+  &__info-title {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: rgba(255, 255, 255, .8);
+    cursor: pointer;
+    @media (max-width: 768px) {
+      text-align: right;
+      width: 100px;
+    }
+  }
+
+  &__info-link {
+    color: #DEE2E6;
+  }
+
+  &__info-icon {
+    cursor: pointer;
+  }
+}
+
+.inner-header-main-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 166px;
+  position: absolute;
+  left: 0;
+  bottom: -200px;
+  z-index: 5;
+  @media (max-width: 800px) {
+    align-items: center;
+  }
+  @media (max-width: 580px) {
+    height: 150px;
+    bottom: -180px;
+  }
+  @media (max-width: 470px) {
+    height: 130px;
+    bottom: -160px;
+  }
+  @media (max-width: 370px) {
+    height: 100px;
+    bottom: -140px;
+  }
+
+  .main-logo {
+    width: 100%;
+  }
+
+  &__logo-container {
+    @media (max-width: 800px) {
+      width: 163px;
+      margin-left: 37%;
+    }
+    @media (max-width: 550px) {
+      margin-left: 30%;
+    }
+    @media (max-width: 430px) {
+      margin-left: 20%;
+    }
+    @media (max-width: 360px) {
+      width: 120px;
+      margin-left: 20%;
+    }
+  }
+
+  &__burger-container {
+    cursor: pointer;
+    @media (max-width: 800px) {
+      position: absolute;
+      left: 2%;
+      top: 40%;
+    }
+  }
+
+  &__info-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__phone-container {
+    display: flex;
+    gap: 7px
+  }
+
+  &__login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 88px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #080e0c;
+    border-radius: 4px;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    @media (max-width: 800px) {
+      position: absolute;
+      right: 0;
+      top: 35%;
+    }
+    @media (max-width: 470px) {
+      top: 32%;
+    }
+    @media (max-width: 380px) {
+      top: 30%;
+    }
+  }
+
+  &__phone-text {
+    line-height: 19px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &__search-container,
+  &__sight-container,
+  &__phone-container {
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &__search-container,
+  &__sight-container {
+    cursor: pointer;
+  }
+
+}
+
+.inner-header-main-page__info-container {
+  .inner-header-search-input {
+    &__wrapper {
+      width: 500px;
+      padding: 0 0;
+      margin: 0 0;
+    }
+    &__item {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    &__search {
+      position: absolute;
+      right: 15px;
+    }
+  }
+}
+
+/* Скрываем инпут и иконку лупы */
+#searchWrapper {
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.inner-header-search-input__search {
+  display: none;
+}
+/* Показываем инпут и иконку лупы после нажатия на иконку поиска */
+#searchContainer.hide-search {
+  display: none;
+}
+
+#searchWrapper.show-search {
+  opacity: 1;
+  max-width: 500px; /* Задайте желаемую ширину для появления инпута */
+}
+
+#searchWrapper.show-search .inner-header-search-input__search {
+  display: block;
+}
+
